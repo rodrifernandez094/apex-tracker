@@ -1,0 +1,16 @@
+# dependencies
+/client/node_modules
+/node_modules
+
+# testing
+/coverage
+
+# production
+/client/build
+
+# misc
+/config/config.env
+
+/client/npm-debug.log*
+/client/yarn-debug.log*
+/client/yarn-error.log*

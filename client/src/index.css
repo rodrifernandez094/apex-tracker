@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a {
+  text-decoration: none;
+}
+
+body {
+  @apply bg-stone-900;
+}
+
+.bg-image {
+  background: url("./assets/images/apex-wattson.png") center no-repeat;
+  background-size: cover;
+}
