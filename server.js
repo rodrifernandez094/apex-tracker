@@ -1,7 +1,9 @@
 const express = require("express");
-const dotenv = require("dotenv").config({ path: `${__dirname}/config/config.env` });
+const dotenv = require("dotenv").config({
+  path: `${__dirname}/config/config.env`,
+});
 const routes = require("./routes/routes");
-const path = require('path');
+const path = require("path");
 
 const app = express();
 
@@ -9,9 +11,8 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use("/api/profile", routes);
 
-
 if (process.env.NODE_ENV === "production") {
-    app.use(express.static(path.join(__dirname, "./client/build")));
+  app.use(express.static(path.join(__dirname, "./client/dist")));
 }
 
 const port = process.env.PORT || 8000;
