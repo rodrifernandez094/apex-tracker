@@ -4,6 +4,9 @@
   "description": "Fetch and display detailed apex legends account stats.",
   "main": "server.js",
   "scripts": {
+    "install_client": "cd client && npm install",
+    "build_client": "cd client && npm run build",
+    "build": "npm run install_client && npm run build_client",
     "dev": "nodemon server.js",
     "start": "node server.js"
   },
